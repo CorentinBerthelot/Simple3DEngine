@@ -39,7 +39,7 @@ addons:
     build_command_prepend: "cmake ."
     build_command:   "make"
     branch_pattern: Initialization
-	apt:
+  apt:
       sources:
       - ubuntu-toolchain-r-test
       packages:
