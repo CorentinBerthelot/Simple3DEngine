@@ -11,8 +11,7 @@ before_install:
   - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
 
 
-#Build  
-script: cmake . && make
+
 
 #-----------------------------
 #Configuration travis
@@ -40,3 +39,22 @@ addons:
     build_command_prepend: "cmake ."
     build_command:   "make"
     branch_pattern: Initialization
+	apt:
+      sources:
+      - ubuntu-toolchain-r-test
+      packages:
+      - gcc-4.8
+      - g++-4.8
+      - clang
+
+compiler:
+ - gcc
+ - clang
+
+ #Build 
+ before_script:
+  - cmake .
+script:make
+install:
+# Use g++4.8 and not 4.6 (C++11 missing)
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
