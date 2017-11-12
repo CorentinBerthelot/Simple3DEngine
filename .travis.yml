@@ -3,12 +3,11 @@
 #-----------------------------
 language: cpp
 
-
+#xorg-dev needeed by glfw library
+#third line needeed by coverity
 before_install:
-#Needeed by glfw library
   - sudo apt-get -qq update
   - sudo apt-get install -y xorg-dev
-#Needeed by coverity
   - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
 
 
