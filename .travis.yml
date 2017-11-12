@@ -1,7 +1,7 @@
 language: cpp
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y xlibs-dev
+  - sudo apt-get install -y libx11-dev
 
 compiler:
   - clang
