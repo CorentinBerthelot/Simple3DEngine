@@ -37,6 +37,6 @@ addons:
     project:
       name: "CorentinBerthelot/Simple3DEngine"
       description: "Build submitted via Travis CI"
-    build_command_prepend: "./configure; make clean"
+    build_command_prepend: "cmake"
     build_command:   "make -j 4"
     branch_pattern: Initialization
