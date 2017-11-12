@@ -37,7 +37,7 @@ addons:
     project:
       name: "CorentinBerthelot/Simple3DEngine"
       description: "Build submitted via Travis CI"
-	notification_email: testcoverity56@yopmail.com
+	notification_email: coveritytest@yopmail.com
     build_command_prepend: "./configure"
     build_command:   "make -j 4"
     branch_pattern: Initialization
