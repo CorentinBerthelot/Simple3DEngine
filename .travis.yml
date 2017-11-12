@@ -2,9 +2,7 @@
 #Travis file
 #-----------------------------
 language: cpp
-compiler:
- - gcc
- - clang
+
 #xorg-dev needeed by glfw library
 #third line needeed by coverity
 before_install:
@@ -48,7 +46,9 @@ addons:
       - gcc-4.8
       - g++-4.8
       - clang
-
+compiler:
+ - gcc
+ - clang
 
 
  #Build 
