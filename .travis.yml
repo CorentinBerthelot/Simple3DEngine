@@ -3,3 +3,4 @@ compiler:
   - clang
   - gcc
 os: windows
+script: make
