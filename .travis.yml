@@ -33,8 +33,8 @@ addons:
     project:
       name: "CorentinBerthelot/Simple3DEngine"
       description: "Build submitted via Travis CI"
-	notification_email: coveritytest@yopmail.com
-    build_command_prepend: "cmake ."
+	  notification_email: coveritytest@yopmail.com
+	build_command_prepend: "cmake ."
     build_command:   "make"
     branch_pattern: Initialization
 
