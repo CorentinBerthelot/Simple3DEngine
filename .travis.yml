@@ -3,4 +3,4 @@ compiler:
   - clang
   - gcc
 os: windows
-script: make
+script: ./configure && make && make test
