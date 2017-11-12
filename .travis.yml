@@ -3,4 +3,6 @@ compiler:
   - clang
   - gcc
 os: windows
-script: ./configure && make && make test
+script: cmake
+notifications:
+  email: false
