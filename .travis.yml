@@ -3,8 +3,6 @@ compiler:
   - clang
   - gcc
 os: windows
-script: 
--cmake .
--make
+script: cmake . && make
 notifications:
   email: false
