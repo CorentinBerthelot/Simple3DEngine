@@ -35,8 +35,8 @@ addons:
       description: "Build submitted via Travis CI"
 	notification_email: covertytest@yopmail.com
 	build_command_prepend: "cmake ."
-    build_command:   "make"
-    branch_pattern: Initialization
+	build_command:   "make"
+	branch_pattern: Initialization
 
  #Build 
 
