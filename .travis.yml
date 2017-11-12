@@ -36,7 +36,7 @@ addons:
     notification_email: covertytest@yopmail.com
     build_command_prepend: "cmake ."
     build_command:   "make"
-    branch_pattern: Initialization
+    branch_pattern: coverity_scan
 
  #Build 
 
