@@ -1,1 +1,20 @@
+#-----------------------------
+#Travis file
+#-----------------------------
 language: cpp
+
+#Needeed by glfw library
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y xorg-dev
+
+
+#Build  
+script: cmake . && make
+
+#-----------------------------
+#Configuration travis
+#-----------------------------
+
+notifications:
+  email: false
