@@ -52,7 +52,8 @@ compiler:
 
 
  #Build 
- before_script:cmake .
+before_script:
+-cmake .
 script:make
 install:
 # Use g++4.8 and not 4.6 (C++11 missing)
